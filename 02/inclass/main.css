@@ -1,0 +1,63 @@
+img{
+    max-width:100%;
+}
+
+section{
+    background-color: antiquewhite;
+}
+
+#menutoggle{
+    display:none;
+}
+
+#logo{
+    height:40px;
+}
+
+#togglebutton{
+    height:40px;
+}
+
+header nav ul{
+    display:none;
+    padding-left:0px;
+    list-style:none;
+}
+
+#menutoggle:checked + ul{
+    display:block;
+}
+
+header nav li{
+    padding: 5px 10px;
+    border-bottom: 2px solid;
+}
+
+header nav li:last-child{
+    border-bottom:none;
+}
+
+@media(min-width:768px){
+    section{
+        width:768px;
+        margin:auto;
+        background-color:burlywood;
+    }
+
+    label[ for=menutoggle] {
+        display:none;
+    }
+
+    header nav ul {
+        display: block;
+        float:right;
+    }
+
+    header nav li{
+        display: inline-block;
+        border-bottom:none;
+    }
+
+
+
+}
