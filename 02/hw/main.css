@@ -1,5 +1,22 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300;400&display=swap');
+
+body{
+    margin:0;
+}
+
+#wrapper{
+    max-width:1400px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#homepage{
+    max-width:1400px;
+    margin-right:auto;
+    margin-left:auto;
+}
 
 img{
     max-width:100%;
@@ -7,13 +24,13 @@ img{
 
 #logo{
     height:40px;
-    margin:5px;
+    margin:10px;
 }
 
 #togglebutton{
     height:30px;
     float:right;
-    margin:5px;
+    margin:15px;
 }
 
 #menutoggle{
@@ -28,6 +45,7 @@ header nav ul{
     display:none;
     text-align:center;
     list-style:none;
+    padding-left:0px;
 }
 
 header nav li a {
@@ -46,7 +64,13 @@ header nav li:last-child{
     border-bottom:none;
 }
 
-
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size:12px;
+    margin-right:20px;
+    margin-left:20px;
+    text-align:center;
+}
 
 
 
@@ -60,7 +84,7 @@ header nav li:last-child{
         display:block;
         margin-left: auto;
         margin-right:auto;
-        margin-top:20px;
+        margin-top:25px;
         
 
     }
@@ -95,13 +119,10 @@ header nav li:last-child{
 @media(min-width:1200px){
     #logo{
         height:60px;
-        margin:15px;
+        margin:25px;
         display:inline-block;
     }
 
-    label[for=menutoggle]{
-        display:none;
-    }
 
     header nav ul{
         float:right;
@@ -111,7 +132,7 @@ header nav li:last-child{
     header nav li{
         display:inline-block;
         border-bottom:none;
-        padding:40px 80px;
+        padding:50px 80px;
     }
 
 
