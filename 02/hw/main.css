@@ -7,16 +7,35 @@ body{
 }
 
 #wrapper{
-    max-width:1400px;
+    max-width:1500px;
     margin-right:auto;
     margin-left:auto;
 }
 
 #homepage{
-    max-width:1400px;
+    max-width:1500px;
     margin-right:auto;
     margin-left:auto;
 }
+
+#sm{
+    max-width:1500px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#pv{
+    max-width:1500px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#lax{
+    max-width:1500px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
 
 img{
     max-width:100%;
@@ -65,13 +84,33 @@ header nav li:last-child{
 }
 
 p {
-    font-family: 'Roboto Mono', monospace;
-    font-size:12px;
-    margin-right:20px;
-    margin-left:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:13px;
+    margin-right:auto;
+    margin-left:auto;
     text-align:center;
+    max-width:400px;
+    padding:10px 40px;
+    margin-bottom:50px;
 }
 
+h1{
+    font-family: 'Roboto Mono', monospace;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+    margin-bottom:0px;
+}
+
+h1:first-child{
+    margin-top:30px;
+}
+
+.text{
+    font-size:16px;
+    margin-top:0px;
+    margin-bottom:40px;
+}
 
 
 
@@ -85,8 +124,6 @@ p {
         margin-left: auto;
         margin-right:auto;
         margin-top:25px;
-        
-
     }
 
     label[for=menutoggle]{
@@ -104,7 +141,26 @@ p {
         padding:30px 80px;
     }
 
+    p{
+        font-size:14px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        max-width: 600px;
+        padding: 15px 0px;
+    }
 
+
+    h1{
+        margin-bottom:15px;
+        font-size:30px;
+    }
+    
+    h1:first-child{
+        margin-top:20px;
+    }
+    
+   
 
 }/*end of 768px media query*/
 
@@ -135,7 +191,29 @@ p {
         padding:50px 80px;
     }
 
+    p{
+        font-size:18px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+        max-width: 700px;
+       padding: 20px 0px;
+    }
 
+    h1{
+        margin-bottom:15px;
+        font-size:30px;
+    }
+    
+    h1:first-child{
+        margin-top:20px;
+    }
 
+    .text{
+        font-size:18px;
+        margin-top:0px;
+        margin-bottom:40px;
+    }
+    
 
 }/*end of 1200px media query*/
