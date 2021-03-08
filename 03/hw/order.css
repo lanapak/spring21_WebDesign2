@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+@media (min-width:768px){
+
+.o-b-m2{
+    order:-2;
+}
+
+.o-b-1{
+    order:3;
+}
+
+}

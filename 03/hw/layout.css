@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.floater{
+	float:left;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.w-100{
+	width:100%;
+}
+
+@media (min-width: 768px){
+	.w-lg-33{
+		width:33.3%;
+	}
+	.w-lg-67{
+		width:66.7%;
+	}
+
+
+}
