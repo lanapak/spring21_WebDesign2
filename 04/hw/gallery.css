@@ -1,18 +1,37 @@
 .grid-gal{
     margin: 0 auto;
-    max-width:1000px;
+    max-width:1200px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap:15px;
     height:50vh;
+    margin-top: 30px;
 }
 .gal-item:first-child{
     grid-column: 1 / 3;
     grid-row: 1 /2 ;
+    background: url(./images/a.png);
+    background-size:cover;
+    background-attachment: absolute;
 }
 
 .gal-item:nth-child(2){
     grid-column: 3 / 4;
     grid-row: 1 /3 ;
+    background: url(./images/b.png);
+    background-size:cover;
+    background-attachment: absolute;
+}
+
+.gal-item:nth-child(3){
+    background: url(./images/c.jpg);
+    background-size:cover;
+    background-attachment: absolute;
+}
+
+.gal-item:last-child{
+    background: url(./images/d.png);
+    background-size:cover;
+    background-attachment: absolute;
 }

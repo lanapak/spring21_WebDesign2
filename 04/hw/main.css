@@ -1,7 +1,19 @@
-@import url(colors.css);
+/* @import url(colors.css); */
 @import url(gallery.css);
 @import url(about.css);
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Work+Sans:wght@900&display=swap');
+
+
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+.text{
+    margin:auto;
+}
+
 
 /* HOME PAGE */
 
@@ -13,6 +25,7 @@ nav ul{
 nav ul a{
     color:white;
 	text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .text{
@@ -50,6 +63,7 @@ nav ul a{
 .grid-item:first-child{
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+
 }
 
 .grid-item:nth-child(2){
@@ -82,6 +96,7 @@ footer ul{
     justify-content: space-around;
     color:white;
 	text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
 }
 
 
