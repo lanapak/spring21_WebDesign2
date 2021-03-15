@@ -1,0 +1,31 @@
+/* GENERAL RULES */
+
+body{
+    margin:0px;
+    max-width:1200px;
+    margin: 0 auto;
+    background-color:rgb(27, 27, 27);
+}
+
+img{
+    max-width:100%;
+}
+
+nav ul{
+    list-style:none;
+    padding-left:0px;
+}
+
+nav ul a{
+    text-decoration:none;
+}
+
+
+footer ul{
+    list-style:none;
+    padding-left:0px;
+}
+
+footer ul a{
+    text-decoration:none;
+}
