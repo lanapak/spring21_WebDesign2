@@ -3,5 +3,21 @@
 @import url("grid.css");
 
 article{
-    height:300px;
+    min-height:300px;
+}
+
+.jumbotron{
+    background-image: url(http://pi-ltsp.net/images/desktop-background.png);
+    background-size:cover;
+    background-position: center bottom;
+}
+
+.jumbotron h1,
+.jumbotron h3{
+    color:azure;
+    padding-left:10%;
+}
+
+.jumbotron h1{
+    margin-top:200px;
 }
