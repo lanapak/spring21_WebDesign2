@@ -1,0 +1,47 @@
+h4{
+    text-align :center;
+    text-transform:uppercase;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]{
+    background-color: black;
+}
+
+.form {
+    padding: 20px;
+    max-width:600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+fieldset{
+    margin-bottom:30px;
+    border: 1px solid lightgray;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.label{
+    font-size:12px;
+}
