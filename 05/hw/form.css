@@ -1,7 +1,9 @@
 h5{
     text-align :center;
     text-transform:uppercase;
-
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color:rgb(56, 56, 56);
 }
 
 input[type=text], select {
@@ -25,7 +27,7 @@ input[type=submit] {
 }
   
 input[type=submit]{
-    background-color: black;
+    background-color: rgb(39, 56, 56);
 }
 
 .form {
@@ -37,11 +39,13 @@ input[type=submit]{
 
 fieldset{
     margin-bottom:30px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(184, 212, 212);
     margin-left:20px;
     margin-right:20px;
 }
 
 .label{
-    font-size:12px;
+    font-size:16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(253, 253, 253);
 }

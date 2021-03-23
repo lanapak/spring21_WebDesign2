@@ -18,6 +18,7 @@ body{
 
 article{
     min-height:200px;
+    margin-bottom:20px;
 }
 
 .jumbotron{
@@ -29,7 +30,7 @@ article{
 
 .about{
     background-color: rgb(107, 172, 166);
-    padding-top:30px;
+    padding-top: 15px;
 }
 
 .smoothie{
@@ -50,13 +51,18 @@ p{
 /* smoothie */
 h1{
     text-align: center;
-    padding: 90px 0;
+    padding: 80px 0;
+    font-size:20px;
+    text-transform: uppercase;
+    color:rgb(39, 56, 56);
 }
 
 h2{
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
-
+    margin:50px;
+    font-size: 14px;
+    color:rgb(39, 56, 56);
 }
 
 /* food & drink names + "About" */
@@ -65,7 +71,7 @@ h3{
     margin: 8px;
     font-family: 'Rubik', sans-serif;
     color:rgb(56, 56, 56);
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
@@ -78,13 +84,45 @@ h3{
 /* drink prices */
 h4{
     text-align: right;
+    color: rgb(39, 56, 56);
 }
+
+
+
+@media (min-width:768px){
+  
+    .about{
+        padding-top: 33px;
+    }
+
+    h1{
+        font-size:30px;
+        padding: 90px 10px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+}
+
+
+
+
 
 
 
 @media (min-width:1024px){
 
     .smoothie{
-        margin-bottom: 64px;
+        margin-bottom: 25px;
     }
+
+    h1{
+        font-size:40px;
+    }
+
+    
+
+
 }
