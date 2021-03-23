@@ -6,9 +6,9 @@ nav ul{
 }
 
 nav ul a{
-    color: black;
+    color: rgb(92, 92, 92);
     text-decoration:none;
-	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -54,7 +54,7 @@ nav ul li:last-child{
 	
 	nav ul li{
 		border-bottom: none;
-        padding-top:30px;
+        padding-top: 40px;
 	}
 
 	.order-3{

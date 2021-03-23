@@ -3,8 +3,10 @@
 @import url(grid.css);
 @import url(nav.css);
 @import url(form.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 
 nav{
     background-color: rgb(184, 212, 212);
@@ -26,9 +28,63 @@ article{
 }
 
 .about{
-    background-color: rgb(123, 221, 213);
+    background-color: rgb(107, 172, 166);
+    padding-top:30px;
 }
 
-.home{
+.smoothie{
     background-color:  rgb(184, 212, 212);
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 10px;
+    color:rgb(56, 56, 56);
+}
+
+.menu{
+    margin-top:20px;
+}
+
+/* smoothie */
+h1{
+    text-align: center;
+    padding: 90px 0;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+/* food & drink names + "About" */
+h3{
+    text-align: left;
+    margin: 8px;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(56, 56, 56);
+    font-size: 20px;
+}
+
+
+.drinks{
+    border: 1px solid rgb(39, 56, 56);
+    margin: 0px 50px;
+    padding: 20px;
+}
+
+/* drink prices */
+h4{
+    text-align: right;
+}
+
+
+
+@media (min-width:1024px){
+
+    .smoothie{
+        margin-bottom: 64px;
+    }
 }
