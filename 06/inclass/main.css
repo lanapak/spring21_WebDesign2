@@ -1,0 +1,13 @@
+@import url(grid.css);
+@import url(colors.css);
+@import url(reset.css);
+@import url(utilities.css);
+
+
+
+#qHabitat{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/29/Australian_bush.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

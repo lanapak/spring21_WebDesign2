@@ -1,0 +1,75 @@
+/* DISPLAY PROPERTIES */
+
+.d-none{
+    display:none;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+@media (min-width:768px){
+    .d-md-none{
+        display:none;
+    }
+    
+    .d-md-inline-block{
+        display: inline-block;
+    }
+
+    .d-md-block{
+        display:block;
+    }
+
+
+}
+
+/* SPACING PROPERTIES */
+ 
+.p-1{
+    padding:10px;
+}
+
+.p-2{
+    padding:20px;
+}
+
+
+@media (min-width:768px){
+    .p-1{
+        padding:10px;
+    }
+    
+    .p-2{
+        padding:20px;
+    }
+    
+
+    
+}
+
+
+/* TYPORGRAPHY */
+.text-center{
+    text-align: center;
+}
+
+h1{
+    font-size:10vw;
+}
+
+
+@media (min-width:768px){
+    h1{
+        font-size:6vw;
+    }
+
+}
+
+
+@media (min-width:1024px){
+    h1{
+        font-size:4vw;
+    }
+     
+}

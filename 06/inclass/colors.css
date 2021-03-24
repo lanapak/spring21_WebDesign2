@@ -1,0 +1,30 @@
+/* COLORS */
+.bg-blue{
+    background-color:rgb(138, 161, 204);
+}
+
+.bg-purple{
+    background-color:rgb(167, 140, 231);
+}
+
+.bg-green{
+    background-color:rgb(156, 190, 156);
+}
+
+.bg-pink{
+    background-color:rgb(252, 178, 215);
+}
+
+.bg-yellow{
+    background-color:rgb(238, 238, 151);
+}
+
+.bg-smoke{
+    background-color: rgba(109, 109, 109, 0.6);
+}
+
+/* TEXT COLORS */
+
+.txt-light{
+    color:snow;
+}
