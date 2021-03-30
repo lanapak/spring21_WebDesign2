@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(nav.css);
+@import url(grid.css);
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 nav{
@@ -7,7 +8,8 @@ nav{
 }
 
 body{
-    background-color: rgb(210, 250, 250);
+    background-color: black;
+    /* background-color: rgb(210, 250, 250); */
 }
 
 .jumbotron{
@@ -15,6 +17,10 @@ body{
     background-size:cover;
     background-position: top ;
     min-height:300px;
+}
+
+h1{
+    color:whitesmoke;
 }
 
 @media (min-width:768px){
