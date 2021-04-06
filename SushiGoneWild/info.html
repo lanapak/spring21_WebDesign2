@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Sushi Gone Wild</title>
+</head>
+<body>
+    <header>
+       <nav>
+            <a href="index.html"><img id="logo" src="images/logored.png" alt="Sushi Gone Wild logo"></a> 
+
+            <label for="menutoggle">
+                <img id="togglebutton" src="images/toggle.png" alt="menu toggle">
+            </label>
+
+            <input type="checkbox" id="menutoggle">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="info.html">Store Info</a></li>
+                <li><a href="https://www.yelp.com/biz/sushi-gone-wild-torrance" target="_blank">Yelp</a></li>
+            </ul>
+       </nav>
+    </header>
+
+    <main>
+        <section class="flex-container">
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.2217283383375!2d-118.36005478417698!3d33.806590680673466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4b10634b5ff9%3A0xfab7be3f0d49653d!2sSushi%20Gone%20Wild!5e0!3m2!1sen!2sus!4v1617679060787!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           
+            <article class=" hours w-md-50">
+                <h5>Open Hours</h5>
+                <h6>Monday - Thursday</h6>
+                <p>11:30 am - 2:45pm</p>
+                <p>5:30 pm - 9:00 pm</p>
+                <h6>Fridays & Saturdays</h6>
+                <p>11:30 am - 9:30 pm</p>
+                <h6>Sundays</h6>
+                <p>4:00 pm - 9:00 pm</p>
+                
+
+             </article>
+             <article class="w-md-50">
+                <div class="form">
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <h5>Contact Info</h5>
+            
+                            <label class="label" for="fname">First Name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="First name...">
+                    
+                             <label class="label" for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Last name...">
+            
+                            <label class="label" for="email">E-mail:</label>
+                            <input type="text" id="email" name="email" placeholder="E-mail...">
+                        </fieldset>
+                    
+                        <fieldset>
+                           <h5>Subject</h5>
+            
+                           <label class="label" for="subject"> Subject Title:</label>
+                           <input type="text" id="subject" name="subject" placeholder="...">
+            
+                           <label class="label" for="textarea">Text area:</label>
+                           <textarea id="textarea" name="textarea" cols="30" rows="6" maxlength="300" ></textarea> 
+                        </fieldset>
+            
+                        <input type="submit" value="Submit">
+            
+                    </form>
+                    </div>
+             </article>
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="flex-container">
+            <article class="footer w-md-50">
+               <h2>Address</h2>
+               <h3>24004 VISTA MONTANA</h3>
+                <h3>TORRANCE, CA 90505</h3>
+            </article>
+            <article class="footer w-md-50">
+                <h2 class="margin-top">Contact Us</h2>
+                <h3>(310) 373-0706</h3>
+            </article>
+        </section>
+    </footer>
+    
+</body>
+</html>

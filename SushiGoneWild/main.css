@@ -1,6 +1,23 @@
 @import url(nav.css);
 @import url(reset.css);
 @import url(grid.css);
+@import url(footer.css);
+@import url(form.css);
+
+
+
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    background-color: rgba(29, 29, 29, 0.514);
+}
 
 .jumbotron{
     background-image: url(images/bg.png);
@@ -9,14 +26,76 @@
     min-height:300px;
 }
 
+.map{
+    margin:30px;
+}
+
+.menu{
+    margin:20px;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    color:white;
+}
+
+
+h6{
+    text-align :center;
+    text-transform:uppercase;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    text-align: center;
+}
+
+h1{
+    text-align:center;
+    margin-right: 10px;
+   
+}
+.text-background{
+    background-color: rgb(190, 49, 49);
+}
+
+.float-right{
+    float:right;
+}
+
+.container{
+    position:relative;
+    text-align:center;
+    padding: 10px;
+}
+
+
+.centered{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media (min-width:768px){
+
     .jumbotron{
         min-height: 500px;
     }
+
+    .hours{
+        margin-top:80px;
+    }
+
+
 }
 
 @media (min-width:1024px){
+
     .jumbotron{
        min-height: 600px;
     }
