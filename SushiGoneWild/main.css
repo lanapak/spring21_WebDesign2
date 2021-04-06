@@ -1,0 +1,23 @@
+@import url(nav.css);
+@import url(reset.css);
+@import url(grid.css);
+
+.jumbotron{
+    background-image: url(images/bg.png);
+    background-size:cover;
+    background-position: top ;
+    min-height:300px;
+}
+
+
+@media (min-width:768px){
+    .jumbotron{
+        min-height: 500px;
+    }
+}
+
+@media (min-width:1024px){
+    .jumbotron{
+       min-height: 600px;
+    }
+}
