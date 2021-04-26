@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+
+        #myHeading{
+            background-color: lightblue;
+            margin: 0px;
+            padding:20px;
+        }
+
+        #myDiv{
+            height:400px;
+            background-color:lightsteelblue;
+        }
+
+    </style>
+</head>
+<body id="docBody">
+    <h1 id="myHeading"> Hi, everyone :)</h1>
+
+    <div id="myDiv"></div>
+
+    <button href="#" id="colorChange">Click to change to pink</button>
+
+    <script>
+        console.log("This is your page talking to you! LOL");
+
+        let bigDiv = document.getElementById("myDiv");
+        let trigButton = document.getElementById("colorChange");
+        let docHeading = document.getElementById("myHeading");
+
+        console.log(trigButton);
+
+        trigButton.addEventListener("click", function(){docHeading.style.backgroundColor = "pink"});
+        trigButton.addEventListener("click", function(){bigDiv.style.backgroundColor = "lightpink"});
+        trigButton.addEventListener("click", function(){bigDiv.innerText = "YAY it's PINK!"});
+
+     
+    </script>
+
+
+
+</body>
+</html>
