@@ -24,7 +24,7 @@
     </style>
 </head>
 <body id="docBody">
-    <h1 id="myHeading"> Hi, everyone :)</h1>
+    <h1 id="myHeading"> Hi, <span id="userName"> World </span> :)</h1>
 
     <div id="myDiv"></div>
 
@@ -33,15 +33,37 @@
     <script>
         console.log("This is your page talking to you! LOL");
 
+        let answer = prompt("What is your name?")
+        console.log(answer);
+        document.getElementById("userName").innerText = answer;
+
         let bigDiv = document.getElementById("myDiv");
         let trigButton = document.getElementById("colorChange");
         let docHeading = document.getElementById("myHeading");
 
         console.log(trigButton);
 
-        trigButton.addEventListener("click", function(){docHeading.style.backgroundColor = "pink"});
-        trigButton.addEventListener("click", function(){bigDiv.style.backgroundColor = "lightpink"});
-        trigButton.addEventListener("click", function(){bigDiv.innerText = "YAY it's PINK!"});
+        trigButton.addEventListener("click", function(){
+           let userAnswer = confirm("Are you sure you wnat to do this?");
+           console.log(userAnswer);
+
+            if(userAnswer == true){
+                docHeading.style.backgroundColor = "pink";
+
+                bigDiv.style.backgroundColor = "lightpink";
+
+                let smallHeading = document.createElement("h5");
+                smallHeading.innerText = "YAY it's PINK!";
+                smallHeading.style.fontStyle = "italic";
+                bigDiv.appendChild(smallHeading);
+
+                alert("The changes are now complete!");
+            }
+            else{
+                alert("No action will be taken.")
+            }
+
+        });
 
      
     </script>
