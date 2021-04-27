@@ -50,27 +50,43 @@
     </style>
 </head>
 <body>
-    <h1 id="myHeading"> Click and change the colors to make a rainbow! </h1>
+    <h1 id="myHeading"> Hi, <span id="userName">there</span> click and change the colors to make a rainbow! </h1>
 
     <div id="red"></div>
     <button href="#" id="colorChangeRed">Click to change the color</button>
+    <button href="#" id="colorBackRed">Click to change back</button>
 
     <div id="orange"></div>
     <button href="#" id="colorChangeOrange">Click to change the color</button>
+    <button href="#" id="colorBackOrange">Click to change back</button>
 
     <div id="yellow"></div>
     <button href="#" id="colorChangeYellow">Click to change the color</button>
+    <button href="#" id="colorBackYellow">Click to change back</button>
 
     <div id="green"></div>
     <button href="#" id="colorChangeGreen">Click to change the color</button>
+    <button href="#" id="colorBackGreen">Click to change back</button>
 
     <div id="blue"></div>
     <button href="#" id="colorChangeBlue">Click to change the color</button>
+    <button href="#" id="colorBackBlue">Click to change back</button>
 
     <div id="purple"></div>
     <button href="#" id="colorChangePurple">Click to change the color</button>
+    <button href="#" id="colorBackPurple">Click to change back</button>
+
+
+
+
 
     <script>
+        let answer = prompt("What is your name?")
+        console.log(answer);
+        document.getElementById("userName")
+        innerText = answer;
+
+
         let redDiv = document.getElementById("red");
         let redButton = document.getElementById("colorChangeRed");
 
@@ -88,16 +104,32 @@
             }
         });
 
+        let redButtonBack = document.getElementById("colorBackRed");
+
+        redButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
+
+            if(userAnswer == true){
+            redDiv.style.backgroundColor = "red";
+            alert("Keep going.");
+            }
+            else{
+            alert("Try again.");
+            }
+        });
+
     
         let orangeDiv = document.getElementById("orange");
         let orangeButton = document.getElementById("colorChangeOrange");
 
         orangeButton.addEventListener("click", function(){
-            let userAnswerOrange = confirm("Are you sure you want to change the color?");
-            console.log(userAnswerOrange);
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
         
 
-            if(userAnswerOrange == true){
+            if(userAnswer == true){
             orangeDiv.style.backgroundColor = "orange";
             alert("Keep going.");
             }
@@ -107,16 +139,34 @@
 
         });
 
+        let orangeButtonBack = document.getElementById("colorBackOrange")
+
+        orangeButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
+
+            if(userAnswer == true){
+            orangeDiv.style.backgroundColor = "yellow";
+            alert("OH NO.");
+            }
+            else{
+            alert("Keep going.");
+            }
+
+        });
+
+       
+
 
         let yellowDiv = document.getElementById("yellow");
         let yellowButton = document.getElementById("colorChangeYellow");
 
         yellowButton.addEventListener("click", function(){
-            let userAnswerYellow = confirm("Are you sure you want to change the color?");
-            console.log(userAnswerYellow);
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
         
-
-            if(userAnswerYellow == true){
+            if(userAnswer == true){
             yellowDiv.style.backgroundColor = "yellow";
             alert("Keep going.");
             }
@@ -126,6 +176,22 @@
 
         });
 
+        let yellowButtonBack = document.getElementById("colorBackYellow")
+        
+        yellowButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
+
+            if(userAnswer == true){
+            yellowDiv.style.backgroundColor = "purple";
+            alert("OH NO.");
+            }
+            else{
+            alert("Keep going.");
+            }
+
+        });
          
          
         let greenDiv = document.getElementById("green");
@@ -133,7 +199,7 @@
 
         greenButton.addEventListener("click", function(){
             let userAnswer = confirm("Are you sure you want to change the color?");
-            console.log(userAnswer);
+            console.log(user);
         
 
             if(userAnswer == true){
@@ -145,17 +211,15 @@
             }
         });
 
-
-        let blueDiv = document.getElementById("blue");
-        let blueButton = document.getElementById("colorChangeBlue");
-
-        blueButton.addEventListener("click", function(){
-            let userAnswerBlue = confirm("Are you sure you want to change the color?");
-            console.log(userAnswerBlue);
+        let greenButtonBack = document.getElementById("colorBackGreen")
+        
+        greenButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
         
 
-            if(userAnswerBlue == true){
-            blueDiv.style.backgroundColor = "blue";
+            if(userAnswer == true){
+            greenDiv.style.backgroundColor = "green";
             alert("Keep going.");
             }
             else{
@@ -165,16 +229,51 @@
         });
 
 
+        let blueDiv = document.getElementById("blue");
+        let blueButton = document.getElementById("colorChangeBlue");
+
+        blueButton.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
+
+            if(userAnswer == true){
+            blueDiv.style.backgroundColor = "blue";
+            alert("Keep going.");
+            }
+            else{
+            alert("Try again.");
+            }
+
+        });
+
+        let blueButtonBack = document.getElementById("colorBackBlue")
+        
+        blueButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
+
+            if(userAnswer == true){
+            blueDiv.style.backgroundColor = "orange";
+            alert("Try again");
+            }
+            else{
+            alert("Keep going.");
+            }
+
+        });
+
 
         let purpleDiv = document.getElementById("purple");
         let purpleButton = document.getElementById("colorChangePurple");
 
         purpleButton.addEventListener("click", function(){
-            let userAnswerPurple = confirm("Are you sure you want to change the color?");
-            console.log(userAnswerPurple);
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
         
 
-            if(userAnswerPurple == true){
+            if(userAnswer == true){
             purpleDiv.style.backgroundColor = "purple";
             alert("GOOD JOB!!");
             }
@@ -184,9 +283,22 @@
 
         });
 
+        let purpleButtonBack = document.getElementById("colorBackPurple")
+        
+        purpleButtonBack.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+        
 
+            if(userAnswer == true){
+            purpleDiv.style.backgroundColor = "blue";
+            alert("Try again");
+            }
+            else{
+            alert("Keep going.");
+            }
 
-
+        });
 
 
     </script>
