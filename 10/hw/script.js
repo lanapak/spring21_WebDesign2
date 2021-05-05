@@ -16,7 +16,7 @@ function largeAJ3(){
 }
 
 function largeAJ4(){
-    largeImg.src="images/aj4blue";
+    largeImg.src="images/aj4blue.png";
 }
 
 function largeDunk(){
