@@ -28,7 +28,7 @@ let toggleTheImage = function(){
     else{
         console.log("show the first one");
         quokkaImg.src = "quokka1.jpg";
-        tgglBTN.innerText = "Show the second image.";
+        tgglBTN.innerText = "Show the second image";
     };
     
 };
