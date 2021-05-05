@@ -1,15 +1,30 @@
 let airJordan1 = document.getElementById("aj1");
+let airJordan3 = document.getElementById("aj3");
+let airJordan4 = document.getElementById("aj4");
+let dunkLow = document.getElementById("dunk");
 let largeImg = document.getElementById("largeImage");
 
-function largeAj1(){
-    if(airJordan1){
-        largeImg.createElement("aj1blue.png")
-    }
-    else{
-        
-    }
+
+console.log(largeImg);
+
+function largeAJ1(){
+    largeImg.src="images/aj1blue.png";
 }
 
+function largeAJ3(){
+    largeImg.src="images/aj3tan.png";
+}
 
-airJordan1.addEventListener("click", largeAj1)
+function largeAJ4(){
+    largeImg.src="images/aj4blue";
+}
+
+function largeDunk(){
+    largeImg.src="images/dunklow.png";
+}
+
+airJordan1.addEventListener("click", largeAJ1);
+airJordan3.addEventListener("click", largeAJ3);
+airJordan4.addEventListener("click", largeAJ4);
+dunkLow.addEventListener("click", largeDunk);
 
