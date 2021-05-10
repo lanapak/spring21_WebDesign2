@@ -5,9 +5,9 @@ let carouselIMG = document.getElementById("carouselIMG");
 
 // for the select:
 let groupSelect = document.getElementById("groupSelect");
-let categorySelect = document.getElementById("categoryselect");
+let categorySelect = document.getElementById("categorySelect");
 let animalOptions = ['puppies', 'kittens', 'quoakkas'];
-let foodOptions = ['coffee', 'desserts', 'cocktails'];
+let foodOptions = ['coffee', 'desserts', 'cocktails', 'muffins'];
 let natureOptions = ['beaches', 'forests', 'lakes'];
 
 
@@ -32,8 +32,6 @@ let changeSlide = function(){
     else{
         currentIndex = currentIndex+1;
     }
-
-    
 }
 
 window.addEventListener("load", function(){
@@ -48,19 +46,23 @@ window.addEventListener("load", function(){
 })
 
 let updateCategory = function(){
-    concole.log(groupSelect);
-
-    let seletedValue = groupSelect.value;
+    console.log(groupSelect);
+    categorySelect.innerHTML = '';
+    let selectedValue = groupSelect.value;
     if(selectedValue === "animals"){
         animalOptions.forEach(function(elem){
-           categorySelect.innerHTML += '<option value="' + elem + ' ">' + elem + </option>'
+           categorySelect.innerHTML += '<option value="' + elem + ' ">' + elem + '</option>'
         })
     }
     else if(selectedValue ==="food"){
-
+        foodOptions.forEach(function(elem){
+            categorySelect.innerHTML += '<option value="' + elem + ' ">' + elem + '</option>'
+         })
     }
     else if(selectedValue ==="nature"){
-
+        natureOptions.forEach(function(elem){
+            categorySelect.innerHTML += '<option value="' + elem + ' ">' + elem + '</option>'
+         })
     }
 
 }
