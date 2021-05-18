@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthtic images</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="grid">
+            <div class="imgage">
+                <button id="toggleOne">Show/ hide first image</button>
+                <div id="imgOne">
+                    <img src="1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="imgage">
+                <button id="toggleTwo">Show/ hide second image</button>
+                <div id="imgTwo">
+                    <img src="2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="imgage">
+                <button id="toggleThree">Show/ hide third image</button>
+                <div id="imgThree">
+                    <img src="3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="imgage">
+                <button id="toggleFour">Show/ hide fourth image</button>
+                <div id="imgFour">
+                    <img src="4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#toggleOne").click(function(){
+            $("#imgOne").fadeToggle(1000);
+        })
+
+        $("#toggleTwo").click(function(){
+            $("#imgTwo").fadeToggle(1000);
+        })
+        
+        $("#toggleThree").click(function(){
+            $("#imgthree").fadeToggle(1000);
+        })
+
+        $("#toggleFour").click(function(){
+            $("#imgFour").fadeToggle(1000);
+        })
+    </script>
+    
+</body>
+</html>
