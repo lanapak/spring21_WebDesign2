@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to jQuery</title>
+    <style>
+        img {
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="paragraphs">
+    <p id="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse tempora, deserunt provident eligendi amet culpa similique, dicta quis, magnam voluptate! Ex consequatur reiciendis possimus eum inventore necessitatibus, esse quia.</p>
+    </div>
+
+    <div class="img-container">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+    </div>
+    <hr>
+
+    <button id="addMore"> Add another line</button>
+    <button id="removeSome">Remove clones</button>
+    <button id="hideImg">Hide image</button>
+    <button id="showImg">Show image</button>
+    <button id=toggleImg>Toggle image</button>
+    <button id=fadeImgOut>Fade image out</button>
+    <button id=slideImgDown>Slide image down</button>
+    <button id=customAnim>Custom Animation</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // let addTextB = document.getElementById("addMore");
+        // let textP = document.getElementById("myP");
+
+        // addTextB.addEventListener("click", function(){
+        //     let contentP = textP.innerText;
+
+        //     let newP = document.createElement('p');
+        //     newP.innerText = contentP;
+        //     document.getElementById("paragraphs").appendChild(newP);
+
+        // })
+
+        $("#addMore").click(function(){
+            let cloneP = $("#myP").clone();
+            cloneP.addClass("clone");
+            $("#paragraphs").append( cloneP );
+            // $("#myP").clone().appendTo("#paragraphs");
+        })
+
+        $("#removeSome").click(function(){
+            $(".clone").remove();
+        })
+
+        $("#hideImg").click(function(){
+            $(".img-container img").hide();
+        })
+
+        $("#showImg").click(function(){
+            $(".img-container img").show();
+        })
+
+        $("#toggleImg").click(function(){
+            $(".img-container img").toggle();
+        })
+
+        $("#fadeImgOut").click(function(){
+            $(".img-container img").fadeOut(2000, function(){
+                $(".img-container").append("<h3>The image has finished fading out!</h3>");
+            });
+        })
+
+        $("#slideImgDown").click(function(){
+            $(".img-container img").slideDown(1000,function(){
+                $(".img-container h3").remove();
+            });
+        })
+
+        $("#customAnim").click(function(){
+            $(".img-container img").animate(
+                // objects with CSS property to animate
+                {
+                    width: "0%",
+                    left: 500
+                } 
+            );
+        })
+
+
+
+    </script>
+</body>
+</html>
