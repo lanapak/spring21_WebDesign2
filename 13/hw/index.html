@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/jqueryui/jquery-ui.css">
+    <title>Countries of Some Continents</title>
+</head>
+<body>
+    <div id="accordionTabs">
+        <h3>Europe</h3>
+        <div class="europe-autocomplete">
+            <label for="europe">Search for a country:</label>
+            <input id="europe">
+        </div>
+        <h3>Asia</h3>
+        <div class="asia-autocomplete">
+            <label for="asia">Search for a country:</label>
+            <input id="asia">
+        </div>
+        <h3>North America</h3>
+        <div class="north-autocomplete">
+            <label for="north">Search for a country:</label>
+            <input id="north">
+        </div>
+        <h3>South America</h3>
+        <div class="south-autocomplete">
+            <label for="south">Search for a country:</label>
+            <input id="south">
+        </div>
+    </div>
+
+    <!-- regular jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jQuery UI library  -->
+    <script src="libs/jqueryui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#accordionTabs").accordion();
+
+            let europeTags = [
+                "Albania",
+                "Andorra",
+                "Austria",
+                "Belarus",
+                "Belgium",
+                "Bosnia and Herzegovina",
+                "Bulgaria",
+                "Croatia",
+                "Cyprus",
+                "Czech Republic",
+                "Denmark",
+                "Estonia",
+                "Finland",
+                "Georgia",
+                "Germany",
+                "Greece",
+                "Hungary",
+                "Iceland",
+                "Republic of Ireland",
+                "Italy",
+                "Kosovo",
+                "Latvia",
+                "Liechtenstein",
+                "Lithuania",
+                "Luxembourg",
+                "North Macedonia",
+                "Malta",
+                "Moldova",
+                "Monaco",
+                "Montenegro",
+                "Netherlands",
+                "Norway",
+                "Poland",
+                "Portugal",
+                "Romania",
+                "Russia",
+                "San Marino",
+                "Serbia",
+                "Slovakia",
+                "Slovenia",
+                "France",
+                "Spain",
+                "Sweden",
+                "Switzerland",
+                "Turkey",
+                "Ukraine",
+                "United Kingdom",
+                "Vatican City"
+            ]
+            $("#europe").autocomplete({
+                source: europeTags
+            })
+
+            let asiaTags = [
+                "Afghanistan",
+                "Armenia",
+                "Azerbaijan",
+                "Bahrain",
+                "Bangladesh",
+                "Bhutan",
+                "Brunei",
+                "Cambodia",
+                "China",
+                "East Timor",
+                "Georgia",
+                "India",
+                "Indonesia",
+                "Iran",
+                "Iraq",
+                "Israel",
+                "Japan",
+                "Jordan",
+                "Kazakhstan",
+                "Kuwait",
+                "Kyrgyzstan",
+                "Laos",
+                "Lebanon",
+                "Malaysia",
+                "Maldives",
+                "Mongolia",
+                "Myanmar",
+                "Nepal",
+                "North Korea",
+                "Oman",
+                "Pakistan",
+                "Palestine",
+                "Philippines",
+                "Qatar",
+                "Russia",
+                "Saudi Arabia",
+                "Singapore",
+                "South Korea1",
+                "Sri Lanka",
+                "Syria",
+                "Tajikistan",
+                "Thailand",
+                "Turkey",
+                "Turkmenistan",
+                "Taiwan",
+                "United Arab Emirates",
+                "Uzbekistan",
+                "Vietnam",
+                "Yemen"
+            ]
+            $("#asia").autocomplete({
+                source: asiaTags
+            })
+
+            let northTags = [
+                "Canada",
+                "United States of America",
+                "Mexico",
+                "Belize",
+                "Antigua and Barbuda",
+                "Anguilla",
+                "Aruba",
+                "The Bahamas",
+                "Barbados",
+                "Bermuda",
+                "Bonaire",
+                "British Virgin Islands",
+                "Cayman Islands",
+                "Clipperton Island",
+                "Costa Rica",
+                "Cuba",
+                "Curaçao",
+                "Dominica",
+                "Dominican Republic",
+                "El Salvador",
+                "Greenland",
+                "Grenada",
+                "Guadeloupe",
+                "Guatemala",
+                "Haiti",
+                "Honduras",
+                "Jamaica",
+                "Martinique",
+                "Montserrat",
+                "Navassa Island",
+                "Nicaragua",
+                "Panama",
+                "Puerto Rico",
+                "Saba",
+                "Saint Barthelemy",
+                "Saint Kitts and Nevis",
+                "Saint Lucia",
+                "Saint Martin",
+                "Saint Pierre and Miquelon",
+                "Saint Vincent and the Grenadines",
+                "Sint Eustatius",
+                "Sint Maarten",
+                "Trinidad and Tobago",
+                "Turks and Caicos",
+                "US Virgin Islands"
+            ]
+            $("#north").autocomplete({
+                source: northTags
+            })
+
+            let southTags = [
+                "Brazil",
+                "Argentina",
+                "Bolivia",
+                "Chile",
+                "Colombia",
+                "Ecuador",
+                "Falkland Islands",
+                "French Guiana",
+                "Guyana",
+                "Paraguay",
+                "Peru",
+                "South Georgia and the South Sandwich Islands",
+                "Suriname",
+                "Uruguay",
+                "Venezuela"
+            ]
+            $("#south").autocomplete({
+                source: southTags
+            })
+
+
+        })
+        
+    </script>
+
+
+</body>
+</html>
