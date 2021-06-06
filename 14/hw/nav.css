@@ -8,27 +8,21 @@
     margin-left:15px;
 }
 
-#togglebutton{
-    height:30px;
+#toggleButton{
+    height:50px;
+    width: 50px;
     float:right;
     margin: 15px;
 }
 
-#menutoggle{
-    display:none;
-}
-
-#menutoggle:checked +ul{
-    display:block;
-}
 
 header nav ul{
-    display:none;
-    text-align:center;
+   
+    text-align: center;
     margin:10px;
 }
 
-nav ul a{
+/* nav ul a{
     color: black;
 	text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
@@ -42,7 +36,7 @@ nav ul li{
 
 nav ul li:last-child{
     border-bottom:none;
-}
+} */
 
 
 
@@ -57,11 +51,7 @@ nav ul li:last-child{
         padding-top:30px;
     }
 
-    label[for=menutoggle]{
-        display:none;
-    }
-
-    header nav ul{
+    /* header nav ul{
         display:block;
         margin: 0 auto;
     }
@@ -70,7 +60,7 @@ nav ul li:last-child{
         display:inline-block;
         border-bottom:none;
         padding:30px 40px;
-    }
+    } */
 }
 
 
@@ -85,7 +75,7 @@ nav ul li:last-child{
         display:inline-block;
        
     }
-
+/* 
     header nav ul{
         float:right;
     }
@@ -93,5 +83,5 @@ nav ul li:last-child{
     header nav li{
         padding:45px 50px;
         margin-top:10px;
-    }
+    } */
 }
