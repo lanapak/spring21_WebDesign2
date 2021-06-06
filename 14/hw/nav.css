@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 
 
 #logo{
@@ -17,26 +17,25 @@
 
 
 header nav ul{
-   
     text-align: center;
     margin:10px;
 }
 
-/* nav ul a{
+nav ul a{
     color: black;
 	text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 18px;
 }
 
 nav ul li{
     padding:12px;
-    border-bottom: 1px solid rgb(255, 0, 0);
+    border-bottom: 1px solid #00703c;
 }
 
 nav ul li:last-child{
     border-bottom:none;
-} */
+}
 
 
 

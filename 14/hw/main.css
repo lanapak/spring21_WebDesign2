@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Limelight&display=swap');
 @import url(nav.css);
 @import url(reset.css);
 @import url(footer.css);
+
+
+#homeBg{
+    background-image: url(images/homeBg.jpg) ;
+    background-size: cover;
+    height: 260px;
+    position: relative;
+}
+
+h1{
+    font-family: 'Limelight', cursive;
+    color: white;
+    float: left;
+    font-size: 18px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#donateButton{
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:1024px){
+
+}

@@ -1,6 +1,18 @@
+footer{
+    margin:100px;
+}
+
 footer img{
     height: 30px;
 }
 
 .socials{
 text-align: center;}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:1024px){
+    
+}
