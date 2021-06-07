@@ -14,7 +14,7 @@
 
             <img id="toggleButton" src="images/toggle.jpg">
 
-            <div id="nav">
+            <div id="nav" style="display: none;">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a> </li>
@@ -25,10 +25,56 @@
         </nav>
     </header>
     <main>
+        <h2>The ADI Wildlife Sanctuary</h2>
+
+        <img src="images/about1.jpg">
+
+        <p>
+            After a long and difficult 18 months working in Guatemala, our Operation Liberty circus rescue is drawing to a successful conclusion, with 21 animals removed from circuses. With such large numbers of ex-circus animals needing space, ADI decided that it was time for us to build our own sanctuary.
+        </p>
+
+
+        <p>
+            For the past 16 months, we purchased land and have been building the ADI Wildlife Sanctuary in South Africa. We are currently home to 26 lions, all but one are those we rescued from circuses in Peru and Colombia. Early in the New Year, with our permits finally in place, we will welcome 17 new residents – 12 tigers and 5 lions from our Operation Liberty circus animal rescue in Guatemala.
+        </p>
+
+        <img src="images/about3.jpg">
+
+        <p>
+            The first three of the Guatemala rescues found a wonderful home at Big Cat Rescue in Florida – Kimba, Simba and Max – our three musketeers are settling in, enjoying the peace, respect and care they deserve – our grateful thanks to Big Cat Rescue.
+        </p>
+
+        <p>
+            In a wonderful gesture of support for the ADI Wildlife Sanctuary, Big Cat Rescue has announced a matching grant for the installation of an ecological waste disposal and water filtration system (not an easy project for us to fundraise!). This system will ensure our sanctuary is friendly to the local environment and wildlife, conserves water for use on plants and general work, and helps us to be self-sustaining, building on the long-term welfare of our residents.
+        </p>
+
+        <img src="images/about4.jpg">
+
+        <p>
+            Big Cat Rescue has offered a matching grant of $50,000 towards the $100,000 required for the drains and reedbed filtration system – can you help us get this matched?
+        </p>
+
+        <div id="donateButtonAbout">
+            <a href="donate.html">
+                <button> Donate NOW </button>
+            </a>
+        </div>
 
     </main>
     <footer>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#toggleButton").click(function(){
+            $("#nav").toggle();
+        })
+    })
+        
+
+    </script>
 </body>
 </html>
