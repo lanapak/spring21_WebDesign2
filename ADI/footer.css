@@ -1,0 +1,26 @@
+footer{
+    margin:40px;
+    text-align: center;
+}
+
+footer img{
+    height: 30px;
+}
+
+footer ul a{
+    color: black;
+	text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
+}
+
+.socials{
+text-align: center;}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:1024px){
+    
+}

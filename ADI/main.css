@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Limelight&display=swap');
+@import url(nav.css);
+@import url(reset.css);
+@import url(footer.css);
+@import url(form.css);
+
+
+main{
+    margin-top: 20px;;
+}
+
+#homeBg{
+    background-image: url(images/homeBg.jpg) ;
+    background-size: cover;
+    height: 260px;
+    position: relative;
+}
+
+h1{
+    font-family: 'Limelight', cursive;
+    color: white;
+    float: left;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 10px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+p{
+    margin: 0px 10px;
+}
+
+/* donate button on home page */
+#donateButton{
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.button{
+    background-color:rgb(255, 217, 0);
+    color: #00703c;
+    border:none;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+h2{
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.donate{
+    background-color:#00703c;
+    color: white;
+    border:none;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* donate button on about page */
+#donateButtonAbout{
+    font-family: 'Heebo', sans-serif;
+}
+
+.donation{
+    grid-gap:30px;
+    text-align: center;
+    padding: 40px 40px 150px;
+ 
+}
+
+.amount{
+    outline: 2px solid #00703c;
+    font-size:25px;
+    font-family: 'Heebo', sans-serif;
+    margin:30px;
+    padding:10px;
+
+}
+
+h3{
+    font-size: 26px;
+}
+
+ul{
+    font-family: 'Heebo', sans-serif;
+}
+
+#accordionTabs{
+    margin: 0 20px ;
+}
+
+.green{
+    background-color: #00703c;
+    padding:10px;
+}
+
+@media(min-width:768px){
+
+    .green{
+        background-color: #00703c;
+        padding:30px;
+    }
+    
+
+    .w-50{
+        width: 50%;
+    }
+
+    .float-right{
+        float:right;
+    }
+
+    #homeBg{
+        height: 460px;
+    }
+
+    h1{
+        float: left;
+        font-size: 30px;
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .button{
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .flex{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .img1{
+        order:1;
+    }
+
+    .text1{
+        order:2;
+        float:right;
+    }
+    
+    .img2{
+        order: 4;
+    }
+
+    .text2{
+        order:3; 
+        float:left;
+    }
+
+    .img3{
+        order: 5;
+    }
+
+    .text3{
+        order: 6;
+        float: right;
+    }
+
+} 
+
+@media(min-width:1024px){
+    #homeBg{
+        background-size: cover;
+        height: 660px;
+        position: relative;
+    } 
+
+    h1{
+        font-size: 40px;
+        margin-right: 200px;
+        margin-left: 20px;
+    }
+
+    .button{
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 20px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .segment{
+        /* margin: 0px 20px; */
+        margin: auto;
+        width: 80%;
+        padding: 30px;
+    }
+
+
+}

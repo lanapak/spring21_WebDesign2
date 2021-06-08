@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>ADI</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="images/logo.jpg" alt="Animal Defenders International logo"> </a>
+
+            <img id="toggleButton" src="images/toggle.jpg" alt="togglebutton">
+
+            <div id="nav" style="display: none;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="blog.html">Blog</a> </li>
+                    <li><a href="donate.html">Donate</a> </li>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+    <main>
+        <div id="homeBg">
+            <h1>Support the reintroduction of TEAPSPA, to ban wild and exotic traveling animal acts in the US!</h1>
+            <div id="donateButton">
+                <a href="donate.html">
+                    <button class="button"> Donate NOW </button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/logo.jpg" alt="logo">
+
+        <div class="socials">
+            <a href="https://www.facebook.com/AnimalDefenders"><img src="images/facebookLogo.jpg" alt="facebook logo"> </a>
+            <a href="https://www.instagram.com/animal_defenders_international/"><img src="images/instagramLogo.jpg" alt="intagram logo"> </a>
+            <a href="https://twitter.com/AnimalDefenders"><img src="images/twitterLogo.jpg" alt="twitter logo"> </a>
+            <a href="https://www.youtube.com/animaldefenders"><img src="images/youtubeLogo.jpg" alt="youtube logo"> </a>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="blog.html">Blog</a> </li>
+                <li><a href="donate.html">Donate</a> </li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#toggleButton").click(function(){
+            $("#nav").toggle();
+        })
+    })
+    
+    function checkMediaQuery() {
+  if (window.innerWidth > 768) {
+    $(document).ready(function(){
+        $("#toggleButton").hide();
+        $("#nav").show();
+    })
+  }
+}
+
+    </script>
+
+    
+</body>
+</html>

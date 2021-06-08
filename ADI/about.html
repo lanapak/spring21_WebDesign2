@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>ADI</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="images/logo.jpg" alt="Animal Defenders International logo"> </a>
+
+            <img id="toggleButton" src="images/toggle.jpg">
+
+            <div id="nav" style="display: none;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="blog.html">Blog</a> </li>
+                    <li><a href="donate.html">Donate</a> </li>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+    <main>
+        <h2>The ADI Wildlife Sanctuary</h2>
+
+        <section class="flex">
+        
+        <article class="w-50 img1">
+            <div class="">
+                <img src="images/about1.jpg">
+            </div>
+        </article>
+
+        <article class="w-50 text2">
+            <div class="segment">
+                <p>
+                    ADI's missions is to educate, create awareness, and promote the interest of humanity in the cause of justice, and the suppression of all forms of cruelty to animals; wherever possible, to alleviate suffering, and to conserve and protect animals.
+                </p>
+                <p>
+                    After a long and difficult 18 months working in Guatemala, our Operation Liberty circus rescue is drawing to a successful conclusion, with 21 animals removed from circuses. With such large numbers of ex-circus animals needing space, ADI decided that it was time for us to build our own sanctuary.
+                </p>
+            </div>
+        </article>
+       
+        <article class="w-50 img2">
+            <div class="">
+                <img src="images/about3.jpg">
+            </div>
+        </article>
+
+    
+        <article class="w-50 text2">
+            <div class="segment">
+                <p>
+                    Animal Rescue, Relocation and Maintenance: rescue of abandoned animals from the circuses, entertainment industries, wildlife trade and animal experimentation laboratories. These animals are commonly rescued after a campaign of awareness and education by Animal Defenders International, Inc., U.S.. When governments, such as South America ban the use of animals in circuses. Animal Defenders International, Inc., U.S. assists with relocation of the animals into sanctuaries and then provides support for those sanctuaries to maintain the rescued animals by providing medical treatment, nutrition and a forever home.
+                </p>
+            </div>
+        </article>
+        
+        <article class="w-50 img3">
+            <div class="">
+                <img src="images/about4.jpg">
+            </div>
+        </article>
+
+        <article class="w-50 text3">
+            <div class="segment">
+                <p>
+                    Additional programs are in the form of education and awareness campaigns for the public, media and officials at national, state and local level, using the media, internet and with production of scientific, legal and economic reports on issues; background briefings; leaflets and other publications including videos and electronic presentations. Where appropriate, adi assists government agencies to provide support and assistance to officials with seizures, rescues and relocation of animals in need.
+                </p>
+            </div>
+        </article>
+        </section>
+        <br>
+
+    <div style="background-color: rgb(255, 217, 0); padding: 10px;">
+        <h3 class="center">HELP US</h3>
+        <div class="center" id="donate">
+            <a href="donate.html">
+                <button class="donate"> Donate NOW </button>
+            </a>
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        <img src="images/logo.jpg" alt="logo">
+
+        <div class="socials">
+            <a href="https://www.facebook.com/AnimalDefenders"><img src="images/facebookLogo.jpg" alt="facebook logo"> </a>
+            <a href="https://www.instagram.com/animal_defenders_international/"><img src="images/instagramLogo.jpg" alt="intagram logo"> </a>
+            <a href="https://twitter.com/AnimalDefenders"><img src="images/twitterLogo.jpg" alt="twitter logo"> </a>
+            <a href="https://www.youtube.com/animaldefenders"><img src="images/youtubeLogo.jpg" alt="youtube logo"> </a>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="blog.html">Blog</a> </li>
+                <li><a href="donate.html">Donate</a> </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#toggleButton").click(function(){
+            $("#nav").toggle();
+        })
+    })
+        
+
+    </script>
+</body>
+</html>

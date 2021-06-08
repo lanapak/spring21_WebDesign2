@@ -1,0 +1,52 @@
+
+h5{
+    text-align :center;
+    text-transform:uppercase;
+    font-family: 'Limelight', cursive;
+    font-size: 18px;
+    color:rgb(56, 56, 56);
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]{
+    background-color: rgb(68, 0, 0);
+}
+
+.form {
+    padding: 20px;
+    max-width:600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+fieldset{
+    margin-bottom:30px;
+    border: 1px solid  rgb(73, 73, 73);;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.label{
+    font-size:16px;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/jqueryui/jquery-ui.css">
+    <title>ADI</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="images/logo.jpg" alt="Animal Defenders International logo"> </a>
+
+            <img id="toggleButton" src="images/toggle.jpg">
+
+            <div id="nav" style="display: none;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="blog.html">Blog</a> </li>
+                    <li><a href="donate.html">Donate</a> </li>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+    <main>
+
+        <div class="green">
+        <div id="accordionTabs">
+            
+            <h3>Stop Circus Suffering Legislation <br>
+                Posted: 26 February 2016. Updated: 26 May 2021
+            </h3>
+            <div>
+                <p>
+                    ADI’s Stop Circus Suffering campaign is a major international drive to end the suffering of animals in circuses. ADI presents legal and economic arguments, as well as undercover investigations that expose the cruel treatment of animals, to effect change.
+                    To date, 48 countries have placed national restrictions on the use of animals in traveling circuses. In the United States, 108 jurisdictions from 34 states have taken action to restrict wild and exotic animals in traveling circuses—Hawaii, New Jersey, California, and Colorado have passed statewide bans.
+                </p>
+                <p>
+                    Momentum is building to end the suffering of circus animals in the United States at the local, state, and federal level. However, bills don’t move without constituent voices. ADI needs you to give animals a voice by contacting your legislators.
+                </p>
+                <p>
+                    There is always something YOU can do to help the Stop Circus Suffering campaign.
+                </p>
+            </div>
+
+            <h3>Experts say animal tests may impede progress of COVID-19 treatments <br>Posted: 14 May 2020. Updated: 14 May 2020</h3>
+           
+            <div>
+                <p>
+                    An open letter spearheaded by Animal Defenders International (ADI) and signed by nearly 100 experts, academics, and other concerned parties is calling for advanced non-animal research methods to be prioritised to accelerate the discovery and use of effective vaccines and treatments for COVID-19.
+                </p>
+                <p>
+                    Published ahead of the World Health Assembly on Monday 18 May 2020, and directed at the World Health Organisation, governments, funding bodies, and regulators, the letter states that "significant funding and precious time is being spent on animal research.... despite the known species differences which make the results from such data unreliable when translated to humans."
+                </p>
+                <p>
+                    Signatories include Dr Laura Leslie, a biomedical engineer at Aston University working on human airways models; respiratory medicines specialist Dr Aryan Tavakkoli; Professor Jon Heylings, Chairman and Owner of Dermal Technology Laboratory Ltd and Professor of Toxicology at Keele University; Dr Malcom Wilkinson, Managing Director at Technology For Industry Ltd; Professor Alberto Alemanno, Professor of EU Law; Professor Marc Bekoff, Professor Emeritus of Ecology and Evolutionary Biology at University of Colorado; Dr Simon Brooman, Senior Lecturer in Animal Law at Liverpool John Moores University; Dr Charlotte E Blattner, Doctor of Animal Law at Harvard Law School; and Kirstall Ltd; as well as celebrity supporters Brian Blessed, Jenny Seagrove, Alexei Sayle and Benjamin Zephaniah.
+                </p>
+            </div>
+
+            <h3>Support TEAPSPA, the US bill to ban wild animals in circuses<br>Posted: 16 November 2016. Updated: 11 May 2021</h3>
+            
+            <div>
+                <p>
+                    Animal Defenders International (ADI) supports the Traveling Exotic Animal and Public Safety Protection Act (TEAPSPA), introduced in the last Congress by Representatives Raúl Grijalva (D-AZ) and David Schweikert (R-AZ). TEAPSPA would amend the Animal Welfare Act to prohibit the use of exotic and wild animals in traveling performances, ending the use of wild and exotic animals in traveling shows in the US.
+                </p>
+                <p>
+                    Given the circumstances of constant travel in accommodations that need to be small, lightweight and suitable for transport on a truck or trailer, previous TEAPSPA sponsors have concluded that ending wild animal use is the only practical approach to deal with public safety issues and inspection and oversight problems repeatedly cited by the Office of the Inspector General (OIG).
+                </p>
+                <p>
+                    A recent poll has revealed that 2/3 of Americans are troubled by the use of animals in traveling shows. More than 100 jurisdictions in 34 US states have already decided to either ban or restrict the use of wild animals in traveling shows, due to concerns about public safety and animal welfare. Internationally, 48 nations have also taken action and ended wild animal performances.
+                </p>
+                <p>
+                    ADI advocates changing the business model to human performance circuses. They are popular with the public, require labor (so create jobs), and bring in dollars without exposing citizens to chronically stressed and abused animals.
+                </p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/logo.jpg" alt="logo">
+
+        <div class="socials">
+            <a href="https://www.facebook.com/AnimalDefenders"><img src="images/facebookLogo.jpg" alt="facebook logo"> </a>
+            <a href="https://www.instagram.com/animal_defenders_international/"><img src="images/instagramLogo.jpg" alt="intagram logo"> </a>
+            <a href="https://twitter.com/AnimalDefenders"><img src="images/twitterLogo.jpg" alt="twitter logo"> </a>
+            <a href="https://www.youtube.com/animaldefenders"><img src="images/youtubeLogo.jpg" alt="youtube logo"> </a>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="blog.html">Blog</a> </li>
+                <li><a href="donate.html">Donate</a> </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="libs/jqueryui/jquery-ui.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#toggleButton").click(function(){
+            $("#nav").toggle();
+        })
+        $("#accordionTabs").accordion({
+            collapsible: true,
+            heightStyle: "content"
+        });
+    })
+    
+  
+        
+    
+
+    </script>
+</body>
+</html>
