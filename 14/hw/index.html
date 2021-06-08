@@ -12,7 +12,7 @@
         <nav>
             <a href="index.html"><img id="logo" src="images/logo.jpg" alt="Animal Defenders International logo"> </a>
 
-            <img id="toggleButton" src="images/toggle.jpg">
+            <img id="toggleButton" src="images/toggle.jpg" alt="togglebutton">
 
             <div id="nav" style="display: none;">
                 <ul>
@@ -29,7 +29,7 @@
             <h1>Support the reintroduction of TEAPSPA, to ban wild and exotic traveling animal acts in the US!</h1>
             <div id="donateButton">
                 <a href="donate.html">
-                    <button> Donate NOW </button>
+                    <button class="button"> Donate NOW </button>
                 </a>
             </div>
         </div>
@@ -62,7 +62,15 @@
             $("#nav").toggle();
         })
     })
-        
+    
+    function checkMediaQuery() {
+  if (window.innerWidth > 768) {
+    $(document).ready(function(){
+        $("#toggleButton").hide();
+        $("#nav").show();
+    })
+  }
+}
 
     </script>
 

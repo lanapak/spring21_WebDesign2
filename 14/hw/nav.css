@@ -15,6 +15,17 @@
     margin: 15px;
 }
 
+#menutoggle{
+    display:none;
+}
+
+#menutoggle:checked +ul{
+    display:block;
+}
+
+nav{
+    margin-bottom: 20px;
+}
 
 header nav ul{
     text-align: center;
@@ -43,15 +54,22 @@ nav ul li:last-child{
 @media(min-width:768px){
 
     #logo{
-        height:40px;
-        display:block;
-        margin-left: auto;
-        margin-right:auto;
-        margin-top:0px;
-        padding-top:30px;
+        height:70px;
+        
     }
 
-    /* header nav ul{
+    #toggleButton{
+        height:50px;
+        width: 50px;
+        float:right;
+        margin: 15px;
+    }
+
+    label[for=menutoggle]{
+        display:none;
+    }
+
+    header nav ul{
         display:block;
         margin: 0 auto;
     }
@@ -60,7 +78,7 @@ nav ul li:last-child{
         display:inline-block;
         border-bottom:none;
         padding:30px 40px;
-    } */
+    }
 }
 
 
@@ -68,7 +86,7 @@ nav ul li:last-child{
 
 @media(min-width:1024px){
     #logo{
-        height:40px;
+        height:70px;
         margin-top:10px;
         margin-bottom:30px;
         margin-left:30px;

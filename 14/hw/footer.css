@@ -1,14 +1,17 @@
 footer{
-    margin:100px;
+    margin:40px;
     text-align: center;
-}
-
-.footer{
-    background-color: #00703c;
 }
 
 footer img{
     height: 30px;
+}
+
+footer ul a{
+    color: black;
+	text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12px;
 }
 
 .socials{
