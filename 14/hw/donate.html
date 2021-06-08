@@ -26,12 +26,10 @@
         </nav>
     </header>
     <main >
-        <h3>How you can help</h3>
-        <p>
-            Please help us end the suffering and the abuse of animals by donating today and supporting our work.
-        </p>
+        <h3 class="center" style="background-color: rgb(255, 217, 0)">Please help us end the suffering and the abuse of animals by donating today and supporting our work.</h3>
+       
 
-        <h5>Your donations enable us to work on:</h5>
+        <h5 >Your donations enable us to work on:</h5>
         <ul>
             <li>The rescue, relocation and rehabilitation of abused and suffering animals</li>
             <li>Undercover investigations</li>
@@ -42,7 +40,7 @@
         <div id="donationPage">
 
         <h5>Your Donation</h5>
-        <div class="donation">
+        <div class="donation" class="center">
             <div class="amount">
                 <p>$10</p>
             </div>
@@ -104,12 +102,12 @@
 
                     <div class="field">
                         <label class="label" for="state">State:</label>
-                        <input id="state">
+                        <input type="text" id="state">
                     </div>
 
                     <div class="field">
                         <label class="label" for="country">Country:</label>
-                        <input id="country">
+                        <input type="text" id="country">
                     </div>
                 </fieldset>
             </form>
@@ -171,9 +169,11 @@
 
         </div>
 
-        <button id="donate" type="submit">DONATE</button>
+        <div class="center">
+            <button class="donate" id="donate" type="submit">DONATE</button>
+        </div>
 
-        <p id="thankYou" style="display: none;">Thank you for your donation !</p>
+        <p id="thankYou" class="center" style="display: none;">Thank you for your donation !</p>
 
     </main>
     <footer>
@@ -425,12 +425,17 @@
             source: countryTags
         })
 
+        $("#amount").click(function(){
+            $(this).css('background', 'rgb(255, 217, 0)');
+        })
+
         $('form').submit(function(event){ event.preventDefault(); });
 
         $("#donate").click(function(){
             $("#donationPage").remove();
             $("#thankYou").show();
-
+            $("#thankYou").css("background-color","rgb(255, 217, 0)");
+            $("#donate").remove();
         })
 
 

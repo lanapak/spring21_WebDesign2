@@ -2,6 +2,7 @@
 @import url(nav.css);
 @import url(reset.css);
 @import url(footer.css);
+@import url(form.css);
 
 
 main{
@@ -70,12 +71,37 @@ p{
     font-family: 'Heebo', sans-serif;
 }
 
+.donation{
+    grid-gap:30px;
+    text-align: center;
+    padding: 40px 40px 150px;
+ 
+}
+
+.amount{
+    outline: 2px solid #00703c;
+    font-size:25px;
+    font-family: 'Heebo', sans-serif;
+    margin:30px;
+    padding:10px;
+
+}
+
+h3{
+    font-size: 26px;
+}
+
+ul{
+    font-family: 'Heebo', sans-serif;
+}
+
 
 
 @media(min-width:768px){
 
+
     .w-50{
-        width: 45%;
+        width: 50%;
     }
 
     .float-right{
@@ -97,6 +123,39 @@ p{
         text-align: center;
         padding: 20px 10px;
     }
+
+    .flex{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .img1{
+        order:1;
+    }
+
+    .text1{
+        order:2;
+        float:right;
+    }
+    
+    .img2{
+        order: 4;
+    }
+
+    .text2{
+        order:3; 
+        float:left;
+    }
+
+    .img3{
+        order: 5;
+    }
+
+    .text3{
+        order: 6;
+        float: right;
+    }
+
 } 
 
 @media(min-width:1024px){
@@ -119,4 +178,13 @@ p{
         margin-right: 40px;
         margin-bottom: 40px;
     }
+
+    .segment{
+        /* margin: 0px 20px; */
+        margin: auto;
+        width: 80%;
+        padding: 30px;
+    }
+
+
 }
